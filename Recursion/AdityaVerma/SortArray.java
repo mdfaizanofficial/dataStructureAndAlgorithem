@@ -1,7 +1,6 @@
 package Recursion.AdityaVerma;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SortArray {
 

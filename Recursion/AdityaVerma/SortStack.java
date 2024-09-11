@@ -31,7 +31,11 @@ public class SortStack {
 
         sort(stack);
 
-        System.out.println(stack);
+        while(!stack.isEmpty()){
+            System.out.println(stack.pop());
+        }
+
+        
     }
 
 }
