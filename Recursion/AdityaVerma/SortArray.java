@@ -7,22 +7,23 @@ public class SortArray {
     static void sort(ArrayList<Integer> list){
         if(list.size() == 1) return;
 
-        int val = list.removeLast();
+        int lastValue = list.removeLast();
         sort(list);
 
-        add(list, val);
+        insert(list, lastValue);
     }
-    static void add(ArrayList<Integer> list, int val) {
-      if(list.size() == 0 || list.getLast() <= val){
+    static void insert(ArrayList<Integer> list, int val) {
+      if(list.isEmpty() || list.getLast() <= val){
         list.add(val);
         return;
       }
 
-      int last = list.removeLast();
-      add(list, val);
-      list.add(last);
+      int lastValue = list.removeLast();
+      insert(list, val);
+      list.add(lastValue);
 
     }
+
     public static void main(String[] args) {
         System.out.println("SoryArray.main()");
         ArrayList<Integer> list = new ArrayList<>();
@@ -36,4 +37,5 @@ public class SortArray {
         sort(list);
         System.out.println(list);
     }
+
 }
