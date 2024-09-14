@@ -12,6 +12,12 @@ public class KthSymbolGrammer {
             return ~solve(n-1, k-mid)&1;
         }
     }
+
+    static int withoutRecursive(int n, int k){
+
+        
+        return 0;
+    }
     public static void main(String[] args) {
         System.out.println("KthSymbolGrammer.main()");
         System.out.println(solve(5, 13));
