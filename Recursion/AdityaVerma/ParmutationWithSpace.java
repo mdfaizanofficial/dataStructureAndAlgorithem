@@ -1,6 +1,6 @@
 package Recursion.AdityaVerma;
 
-public class PermutationWithSpace {
+public class ParmutationWithSpace {
 
     static void permutation(String input, String output) {
         if (input.length() == 0) {
