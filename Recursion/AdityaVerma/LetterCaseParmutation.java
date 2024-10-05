@@ -1,4 +1,4 @@
-package recursion.adityaverma;
+package Recursion.AdityaVerma;
 import java.util.ArrayList;
 
 public class LetterCaseParmutation {
