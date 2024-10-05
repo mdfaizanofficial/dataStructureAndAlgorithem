@@ -8,7 +8,7 @@ public class Practice {
 
     }
     static int countCh(char k, String s){
-        int arr[] = new int[125];
+        int arr[] = new int[256];
 
         for(char c : s.toCharArray()){
             arr[c]++;
