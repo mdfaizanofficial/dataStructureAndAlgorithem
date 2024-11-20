@@ -1,5 +1,4 @@
 package DP.AdityaVerma;
-import java.util.*;
 class SubsetSum{
     private static boolean recursive(int[] arr, int n, int sum){
         if(n == 0 || sum == 0){
