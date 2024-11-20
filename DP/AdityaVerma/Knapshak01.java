@@ -1,7 +1,5 @@
 package DP.AdityaVerma;
 
-import java.util.Arrays;
-
 public class Knapshak01 {
     // Recursive solution
     public static int knapshak(int wt[], int val[], int w, int n){
