@@ -1,4 +1,4 @@
-package LinkedLis.KunalKushwaha.SinglyLinkedList;
+package LinkedList.KunalKushwaha.SinglyLinkedList;
 
 public class LL {
     class Node {
@@ -110,6 +110,8 @@ public class LL {
 
         tail = node;
         tail.next = null;
+
+        length -= 1;
 
         return value;
     }

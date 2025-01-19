@@ -1,4 +1,4 @@
-package LinkedLis.KunalKushwaha.SinglyLinkedList;
+package LinkedList.KunalKushwaha.SinglyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,17 +15,23 @@ public class Main {
 
         list.add(1, 2);
         list.display();
+        System.out.println(list.size());
 
         list.removeLast();
         list.display();
+        System.out.println(list.size());
         list.removeLast();
         list.display();
+        System.out.println(list.size());
         list.removeLast();
         list.display();
+        System.out.println(list.size());
         list.removeLast();
         list.display();
+        System.out.println(list.size());
         list.removeLast();
         list.display();
+        System.out.println(list.size());
 
         System.out.println("End");
     }
