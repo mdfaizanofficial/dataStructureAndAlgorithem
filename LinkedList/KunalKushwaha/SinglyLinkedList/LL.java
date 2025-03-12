@@ -1,20 +1,6 @@
 package LinkedList.KunalKushwaha.SinglyLinkedList;
 
 public class LL {
-    class Node {
-        int val;
-        Node next;
-
-        Node(int val) {
-            this.val = val;
-            this.next = null;
-        }
-
-        Node(int val, Node next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     private Node head;
     private int length;
@@ -59,7 +45,7 @@ public class LL {
         length += 1;
     }
 
-    public void add(int index, int value) {
+    public void insertAt(int index, int value) {
         if (index == length) {
             addLast(value);
             return;
@@ -78,6 +64,44 @@ public class LL {
         temp.next = node;
         length += 1;
 
+    }
+
+    // insert using recursion...
+    public void insertRec(int value, int idx) {
+        Node node = head;
+        insertRec(value, idx, node);
+    }
+
+    private void insertRec(int value, int idx, Node curr) {
+        if (idx <= 1) {
+            if (idx == 0) {
+                Node node = new Node(value);
+                node.next = head;
+                head = node;
+                length++;
+                return;
+            } else {
+
+                Node node = new Node(value);
+                node.next = curr.next;
+                curr.next = node;
+                length++;
+                return;
+            }
+        }
+        if (curr.next != null) {
+            idx--;
+            curr = curr.next;
+            insertRec(value, idx, curr);
+        } else {
+            try {
+                throw new IndexOutOfBoundsException("Index out of bound!!!");
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+                return;
+            }
+        }
     }
 
     public int removeFirst() {
@@ -105,8 +129,8 @@ public class LL {
             return removeFirst();
         }
 
-        int value = get(length-1).val;
-        Node node = get(length-2);
+        int value = get(length - 1).val;
+        Node node = get(length - 2);
 
         tail = node;
         tail.next = null;
@@ -116,13 +140,13 @@ public class LL {
         return value;
     }
 
-    public Node get(int index){
-        if(index == 0) {
+    public Node get(int index) {
+        if (index == 0) {
             return head;
         }
 
         Node node = head;
-        for(int i = 1; i < index; i++) {
+        for (int i = 1; i < index; i++) {
             node = node.next;
         }
         return node;
@@ -130,6 +154,22 @@ public class LL {
 
     public int size() {
         return length;
+    }   
+
+    public void reverse() {
+        if(head == null || head.next == null) return;
+
+        Node p = null;
+        Node c = head;
+        Node n = null;
+
+        while(c != null) {
+            n = c.next;
+            c.next = p;
+            p = c;
+            c = n;
+        }
+        this.head = p;
     }
 
     public void display() {

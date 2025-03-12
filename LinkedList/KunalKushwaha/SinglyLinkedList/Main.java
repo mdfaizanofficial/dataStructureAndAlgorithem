@@ -13,22 +13,39 @@ public class Main {
         list.addLast(5);
         list.display();
 
-        list.add(1, 2);
+        list.insertAt(1, 2);
+        list.display();
+        System.out.println(list.size());
+
+        list.insertRec(3,0);
+        list.display();
+        // System.out.println(list.size());
+
+        list.reverse();
+        list.display();
+
+
+
+        list.removeLast();
         list.display();
         System.out.println(list.size());
 
         list.removeLast();
         list.display();
         System.out.println(list.size());
+
         list.removeLast();
         list.display();
         System.out.println(list.size());
+
         list.removeLast();
         list.display();
         System.out.println(list.size());
+
         list.removeLast();
         list.display();
         System.out.println(list.size());
+        
         list.removeLast();
         list.display();
         System.out.println(list.size());
