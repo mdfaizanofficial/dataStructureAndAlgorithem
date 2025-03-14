@@ -1,8 +1,9 @@
-package src.Questions;
+package Questions;
 public class MakeBeautifulString {
     
     public static void main(String[] args) {
         System.out.println("Running..");
+        System.out.println(makeBeautiful("0001111"));
     }
 
 

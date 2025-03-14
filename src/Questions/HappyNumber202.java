@@ -1,4 +1,4 @@
-package src.Questions;
+package Questions;
 
 import java.util.HashSet;
 public class HappyNumber202 {
