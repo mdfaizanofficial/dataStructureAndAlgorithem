@@ -1,4 +1,4 @@
-package java8.OptionalClass;
+package OptionalClass;
 
 import java.util.Optional;
 

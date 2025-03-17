@@ -1,6 +1,4 @@
-package java8.Chapter4;
-
-import java.util.function.Consumer;
+package Chapter4;
 
 public class MethodRefrence {
 
