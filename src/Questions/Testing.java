@@ -22,17 +22,48 @@ public class Testing {
         //     System.out.println(entry);
         // }
 
+        Random random = new Random();
+        for (int i = 0; i < 1000; i++) {
+            
+            System.out.println(random.nextInt(3)+1);
+        }
+        System.out.println(Math.random()*100);
 
+
+
+
+        enum days {
+            SUNDAY, MONDAY, TUESDAY, WEDNESDAY, FRIDAY, SATURDAY
+        }
+
+        System.out.println(days.FRIDAY);
+
+        for (days d  : days.values()) {
+            System.out.println(d);
+        }
+
+
+
+        // Scanner input = new Scanner(System.in);
+        // int num = input.nextInt();
+
+        // switch (num) {
+        //     case 1:
+        //         System.out.println("Hello");
+        //         break;
+        //     default:
+        //         break;
+        // }
 
 
         // Write code here
-		Scanner input = new Scanner(System.in);
+		// Scanner input = new Scanner(System.in);
 
-		int n = input.nextInt();
+		// int n = input.nextInt();
 
-		if(n < 0) System.out.println("Error");
+		// if(n < 0) System.out.println("Error");
 		
-		System.out.println(factorial(n));
+		// System.out.println(factorial(n));
     }
 
 	private static int factorial(int n){
