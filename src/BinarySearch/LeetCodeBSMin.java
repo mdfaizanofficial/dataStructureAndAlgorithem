@@ -29,5 +29,6 @@ public class LeetCodeBSMin {
 
     public static void main(String[] args) {
         System.out.println(solve(new int[]{3,3,1,3}));
+        System.out.println(findMinIdx(new int[]{3,3,0,0,1,1,3}));
     }
 }
