@@ -1,0 +1,4 @@
+This is a file for testing/working with file handling for python programming..
+and we can say this is good for testing for Python.
+Hello
+Thanks.
